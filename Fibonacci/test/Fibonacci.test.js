@@ -23,5 +23,13 @@ describe("Fibonacci", () => {
     	expect(fibonacci.getFibonacciNumber(3)).to.equal(2);
     	expect(fibonacci.getFibonacciNumber(4)).to.equal(3);
     });
+
+    it("shall have the ability to get the fibonacci sequence in an array", () => {
+        let fibonacci = new Fibonacci();
+        let n = 10; 
+        let expectedSequence = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
+        
+        expect(fibonacci.getFibonacciSequenc(n)).to.deep.equal(expectedSequence);
+    });
 });
 
