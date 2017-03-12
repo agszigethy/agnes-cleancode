@@ -28,8 +28,8 @@ describe("Fibonacci", () => {
         let fibonacci = new Fibonacci();
         let n = 10; 
         let expectedSequence = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
-        
-        expect(fibonacci.getFibonacciSequenc(n)).to.deep.equal(expectedSequence);
+
+        expect(fibonacci.getFibonacciSequence(n)).to.deep.equal(expectedSequence);
     });
 });
 
